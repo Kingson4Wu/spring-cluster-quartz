@@ -34,6 +34,14 @@ Quartz应用与集群原理分析:<http://tech.meituan.com/mt-crm-quartz.html>
 
 分布式调度QUARTZ+SPRING:<http://www.blogjava.net/paulwong/archive/2014/11/14/420104.html>
 
+<http://www.jianshu.com/p/14f86c6efe22>
+
 
 quartz 在集群中的任务切换??
+
+
+---
+
+Elastic-Job - 分布式定时任务框架<https://my.oschina.net/u/719192/blog/506062>
+
 
