@@ -1,5 +1,6 @@
 package com.aaron.clusterquartz.job;
 
+import com.aaron.clusterquartz.util.DateUtil;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.quartz.JobExecutionContext;
@@ -14,21 +15,19 @@ import java.util.Date;
  * @description 一句话描述该文件的用途
  * @date 2016-05-23
  */
-public class PrintCurrentTimeJobs extends QuartzJobBean
-{
+public class PrintCurrentTimeJobs extends QuartzJobBean {
     private static final Log LOG_RECORD = LogFactory.getLog(PrintCurrentTimeJobs.class);
 
     @Autowired
     private ClusterQuartz clusterQuartz;
 
 
-    protected void executeInternal(JobExecutionContext jobExecutionContext) throws JobExecutionException
-    {
-        LOG_RECORD.info("begin to execute task," + DateUtils.dateToString(new Date()));
+    protected void executeInternal(JobExecutionContext jobExecutionContext) throws JobExecutionException {
+        LOG_RECORD.info("begin to execute task," + DateUtil.date2Str("yyyy-MM-dd HH:mm:ss:SSS", new Date()));
 
         clusterQuartz.printUserInfo();
 
-        LOG_RECORD.info("end to execute task," + DateUtils.dateToString(new Date()));
+        LOG_RECORD.info("end to execute task," + DateUtil.date2Str("yyyy-MM-dd HH:mm:ss:SSS", new Date()));
 
     }
 }
