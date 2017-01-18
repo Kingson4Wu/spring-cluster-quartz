@@ -45,3 +45,12 @@ quartz 在集群中的任务切换??
 Elastic-Job - 分布式定时任务框架<https://my.oschina.net/u/719192/blog/506062>
 
 
+---
+定时任务框架Quartz的新玩法
+<https://yq.aliyun.com/articles/62959>
+quartz-mongodb
+quartz-redis-jobstore
+
+---
+Quartz集群实战及原理解析:<http://blog.csdn.net/wenniuwuren/article/details/45866807>
+
